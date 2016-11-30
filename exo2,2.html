@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Un menu !</title>
+    <style type="text/css">
+
+            ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #088A85;
+           }
+      li {
+        float: left;
+      }
+      li a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 12px;
+        text-decoration: none;
+        
+       } 
+     li:first-child {
+        float: right;
+        border: 1px solid white;
+        margin: 5px;
+        border-radius:6px !important;
+        margin-right: 150px;
+      }
+
+      @media (max-width: 700px){
+        li a{
+          font-size: 20px;
+          padding: 5px;
+        }
+          li:first-child {
+        float: none;
+        border: 1px solid white;
+        margin: 8px;
+        border-radius:6px !important;
+            padding-bottom: 5px;
+            padding-top: 5px;
+
+      }
+        li:not(:first-child){
+          float: none;
+        }
+        li:last-child{
+          padding-bottom: 10px;
+        }
+      }
+       
+    
+    </style>
+	</head>
+	<body>
+		<nav class="menu">
+			<ul>
+			  <li><a href="#">IUT de Fontainebleau</a></li>
+				<li><a href="#">APL</a></li>
+				<li><a href="#">WIM</a></li>
+				<li><a href="#">ASR</a></li>
+				<li><a href="#">MATHS</a></li>
+     
+			</ul>
+		</nav>
+</body>
+</html>
